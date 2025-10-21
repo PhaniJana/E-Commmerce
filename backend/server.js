@@ -24,6 +24,9 @@ app.use('/api/product',productRouter)
 app.use('/api/cart',cartRouter)
 app.use('/api/orders',ordersRouter)
 
+app.get('/',(req,res)=>{
+    res.send('Api working')
+})
 
 
 app.listen(port,()=>{
